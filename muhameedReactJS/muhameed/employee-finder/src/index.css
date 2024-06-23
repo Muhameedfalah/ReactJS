@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.navbar-bran {
+  display: inline-block;
+}
+.navbar-bran img {
+  height: 45px;
+}
+.navbar-nav {
+  flex-direction: row !important;
+  column-gap: 30px !important;
+}
+.navbar-nav .nav-link {
+  font-weight: 600;
+}
+.navbar-nav .nav-link.active {
+  text-decoration: underline;
+}
+.brand_area {
+  min-height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.navbar-brand {
+  width: 120px;
+  height: 75px;
+}
+.navbar-brand img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.brand_area .container {
+  height: 100%;
+}
+.section_padding {
+  padding: 80px 0;
+}
+.card_grids {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+.home_search .wrapper form {
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+.employeeCard,
+.wishlistCard {
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 20px;
+  height: 100%;
+}
+.employeeCard_thumb,
+.wishlistCard_thumb {
+  height: 120px;
+  width: 120px;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+.employeeCard_thumb img,
+.wishlistCard_thumb img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.employeeCard_text,
+.wishlistCard_text {
+  padding-top: 20px;
+}
+.wishlistCard_text .button_groups {
+  display: grid;
+  grid-template-columns: 0.8fr 1fr;
+  grid-gap: 10px;
+}
+.empInfo_card {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 80px 0;
+}
+.empInfo_thumb {
+  max-width: 120px;
+  max-height: 120px;
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+.empInfo_thumb img {
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+  object-fit: contain;
+}
+.search_form {
+  padding-top: 60px;
+  max-width: 480px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+@media screen and (max-width: 1440px) {
+  .card_grids {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (max-width: 1200px) {
+}
+@media screen and (max-width: 991px) {
+  .card_grids {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 767px) {
+  .navbar-bran img {
+    height: 35px;
+  }
+  .section_padding {
+    padding: 40px 0;
+  }
+  .navbar-brand {
+    height: 60px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .card_grids {
+    grid-template-columns: 1fr;
+  }
+  .brand_area {
+    min-height: 350px;
+  }
+}
